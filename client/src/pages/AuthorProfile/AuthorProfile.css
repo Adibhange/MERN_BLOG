@@ -1,0 +1,71 @@
+.profile__container {
+	display: grid;
+	place-items: center;
+	text-align: center;
+}
+
+.profile__details {
+	width: 100%;
+}
+
+.avatar__wrapper {
+	width: 15rem;
+	aspect-ratio: 1/1;
+	position: relative;
+	margin-inline: auto;
+	margin-top: 1rem;
+}
+
+.profile__avatar {
+	height: 100%;
+	border-radius: 50%;
+	border: 1rem solid var(--color-white);
+	overflow: hidden;
+}
+
+.avatar__form {
+	height: 1rem;
+}
+
+.avatar__form input {
+	visibility: hidden;
+}
+
+.avatar__form label,
+.profile__avatar-btn {
+	background: var(--color-gray-900);
+	color: var(--color-white);
+	font-size: 1.3rem;
+	position: absolute;
+	right: 2rem;
+	bottom: 1.4rem;
+	width: 3rem;
+	height: 3rem;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+}
+
+.profile__avatar-btn {
+	cursor: pointer;
+	padding: 0;
+	background: var(--color-primary);
+}
+
+.profile__details h1 {
+	margin-top: 1.5rem;
+}
+
+.form.profile__form {
+	margin-top: 3rem;
+	margin-inline: auto;
+	width: var(--form-width);
+}
+
+/* =========================================== RESPONSIVE QUERIES FOR SMALL DEVICES =========================================== */
+@media screen and (max-width: 800px) {
+	.form.form.profile__form {
+		margin-top: 2.5rem;
+		width: 100%;
+	}
+}

@@ -1,0 +1,49 @@
+.authors__container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3rem;
+}
+
+.author {
+	background: var(--color-white);
+	padding: 1rem;
+	border-radius: var(--radius-3);
+	display: flex;
+	gap: 1rem;
+	transition: transform 0.3s ease-in-out;
+}
+
+.author:hover {
+	box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.07);
+	transform: scale(1.1);
+}
+
+.author__avatar {
+	width: 5rem;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	border: 0.3rem solid var(--color-bg);
+	overflow: hidden;
+}
+
+.author__info p {
+	margin-top: 1rem;
+}
+
+.default-avatar {
+	margin: 0.8rem;
+	font-size: 2.5rem;
+}
+
+/* =========================================== RESPONSIVE QUERIES FOR SMALL DEVICES =========================================== */
+@media screen and (max-width: 800px) {
+	.authors__container {
+		grid-template-columns: 1fr;
+		gap: 1.2rem;
+	}
+
+	.author:hover {
+		box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0.5, 0.5, 0.3);
+		transform: scale(1.01);
+	}
+}

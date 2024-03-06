@@ -1,0 +1,12 @@
+.post__author {
+	display: flex;
+	gap: 1rem;
+	align-items: flex-start;
+}
+
+.post__author-avatar {
+	width: 2.5rem;
+	aspect-ratio: 1/1;
+	border-radius: var(--radius-2);
+	overflow: hidden;
+}

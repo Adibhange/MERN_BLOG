@@ -1,0 +1,19 @@
+.posts__container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 4rem;
+}
+
+/* =========================================== RESPONSIVE QUERIES FOR SMALL DEVICES =========================================== */
+@media screen and (max-width: 800px) {
+	.posts__container {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+		transition: transform 0.3s ease-in-out;
+	}
+
+	.post:hover {
+		box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0.5, 0.5, 0.3);
+		transform: scale(1.01);
+	}
+}
