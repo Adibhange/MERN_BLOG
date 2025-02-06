@@ -31,11 +31,3 @@ A full-stack blog application built with the MERN stack (MongoDB, Express, React
   
 - **Image Storage:**
   - **Cloudinary** for storing and serving images
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js
-- MongoDB instance (local or MongoDB Atlas)
-- Cloudinary account (for image storage)
